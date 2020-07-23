@@ -1,0 +1,64 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+    color: #000;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+    background-color: #014869;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.link-menu {
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    padding: 15px;
+    background: yellow;
+    border-radius: 15px;
+}
+
+/* END TEMPLATE */
+
+.card {
+    height: 300px;
+    width: 200px;
+    background: #003046;
+    transition: 0.5s;
+    position: relative;
+}
+
+.card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #fc4444, #ffc628);
+    z-index: -1;
+    transition: 0.3s;
+}
+
+.card:hover::after {
+    transform: skew(3deg, 3deg);
+}
+
+.card:nth-child(2)::after {
+    background: linear-gradient(135deg, #ffe921, #63ff3b);
+}
+
+.card:nth-child(3)::after {
+    background: linear-gradient(135deg, #21ff58, #3bffe5);
+}
+
+.card:nth-child(4)::after {
+    background: linear-gradient(135deg, #21f0ff, #3b6fff);
+}

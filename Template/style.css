@@ -1,0 +1,24 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+    color: #000;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-menu {
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    padding: 15px;
+    background: yellow;
+    border-radius: 15px;
+}
